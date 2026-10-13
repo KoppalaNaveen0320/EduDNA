@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduDNA - Parent Guardian Portal</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    .ai-summary-box {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(99, 102, 241, 0.08));
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-badge">
+      <div class="logo-icon">🏡</div>
+      <span>EduDNA <span style="font-size:0.85rem; color:var(--accent-emerald); font-weight:500;">/ Parent</span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html" class="nav-link">Portal Home</a>
+      <a href="../student_dashboard/index.html" class="nav-link">Student View</a>
+      <a href="../teacher_dashboard/index.html" class="nav-link">Teacher View</a>
+      <a href="index.html" class="nav-link active">Parent Portal</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 0.35rem;">Learner Progress Overview</h1>
+      <p style="color: var(--text-secondary);">Empowering families with transparent, AI-driven learning insights for <strong id="parent-student-name" style="color:#fff;">Aarav</strong>.</p>
+    </div>
+
+    <!-- AI Tutor Insight Box -->
+    <div class="ai-summary-box">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+        <span class="badge success">AI Learning Coach</span>
+        <span style="font-size:0.85rem; color:var(--text-muted);">Updated today</span>
+      </div>
+      <p id="ai-feedback" style="font-size:1.05rem; line-height:1.6; color:var(--text-primary);"></p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Habit Metrics -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Learning Habits</h2>
+          <span class="badge">Consistency</span>
+        </div>
+        <div style="margin-bottom:1.5rem;">
+          <div class="metric-label">Daily Study Streak</div>
+          <div class="metric-value" style="color:var(--accent-amber);" id="stat-streak">--</div>
+          <p style="font-size:0.85rem; color:var(--accent-emerald);">🔥 Top 10% in cohort dedication</p>
+        </div>
+        <div>
+          <div class="metric-label">Attendance Record</div>
+          <div class="metric-value" style="color:var(--accent-emerald);" id="stat-attendance">--</div>
+        </div>
+      </div>
+
+      <!-- Strengths -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Top Mastery Domains</h2>
+          <span class="badge success">Excelling</span>
+        </div>
+        <ul id="strong-topics" style="list-style:none; display:flex; flex-direction:column; gap:0.75rem;">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+
+      <!-- Growth Opportunities -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Growth Opportunities</h2>
+          <span class="badge warning">Focus Areas</span>
+        </div>
+        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;">
+          Concepts where spaced repetition exercises are scheduled this week.
+        </p>
+        <ul id="review-topics" style="list-style:none; display:flex; flex-direction:column; gap:0.75rem;">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

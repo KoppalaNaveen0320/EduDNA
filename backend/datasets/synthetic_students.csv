@@ -1,0 +1,9 @@
+student_id,name,grade,learning_style,engagement_score,mastery_rate,cognitive_speed
+S1001,Aarav Sharma,10,Visual,88.5,82.0,1.15
+S1002,Priya Patel,10,Auditory,92.0,89.5,1.25
+S1003,Rohan Verma,10,Kinesthetic,74.0,68.0,0.92
+S1004,Ananya Gupta,10,Visual,95.5,94.0,1.38
+S1005,Vikram Singh,10,Reading/Writing,68.0,61.5,0.85
+S1006,Diya Mukherjee,10,Visual,85.0,79.0,1.08
+S1007,Kabir Reddy,10,Kinesthetic,79.5,74.0,1.02
+S1008,Neha Iyer,10,Reading/Writing,91.0,88.0,1.20

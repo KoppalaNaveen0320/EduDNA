@@ -1,0 +1,11 @@
+student_id,quiz_id,topic,score,attempts,time_spent_secs
+S1001,Q101,Linear Algebra,85.0,1,720
+S1001,Q102,Calculus,78.5,2,950
+S1002,Q101,Linear Algebra,92.0,1,640
+S1002,Q102,Calculus,94.5,1,610
+S1003,Q101,Linear Algebra,65.0,3,1200
+S1003,Q102,Calculus,62.0,2,1100
+S1004,Q101,Linear Algebra,98.0,1,510
+S1004,Q102,Calculus,96.0,1,540
+S1005,Q101,Linear Algebra,58.0,2,1300
+S1005,Q102,Calculus,60.0,3,1250

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduDNA - Student Learning Genome</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    .dna-hero {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(6, 182, 212, 0.08));
+      border: 1px solid var(--border-glow);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .dna-visualizer {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .marker-card {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      min-width: 160px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-badge">
+      <div class="logo-icon">🧬</div>
+      <span>EduDNA <span style="font-size:0.85rem; color:var(--accent-cyan); font-weight:500;">/ Student</span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html" class="nav-link">Portal Home</a>
+      <a href="index.html" class="nav-link active">Genome Profile</a>
+      <a href="../teacher_dashboard/index.html" class="nav-link">Teacher View</a>
+      <a href="../parent_dashboard/index.html" class="nav-link">Parent Portal</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="dna-hero">
+      <div>
+        <span class="badge" id="student-style">Loading DNA...</span>
+        <h1 style="font-family: var(--font-display); font-size: 2.2rem; margin: 0.75rem 0 0.25rem;" id="student-name">Aarav Sharma</h1>
+        <p style="color: var(--text-secondary);" id="student-meta">Grade 10 • ID: S1001</p>
+      </div>
+      <div class="dna-visualizer">
+        <div class="marker-card">
+          <div class="metric-label">Mastery Rate</div>
+          <div class="metric-value" style="color: var(--accent-cyan);" id="val-mastery">--</div>
+        </div>
+        <div class="marker-card">
+          <div class="metric-label">Engagement</div>
+          <div class="metric-value" style="color: var(--primary);" id="val-engagement">--</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <!-- DNA Traits -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Cognitive DNA Markers</h2>
+          <span class="badge">GNN Synced</span>
+        </div>
+        <div id="markers-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Personalized Next Steps</h2>
+          <span class="badge success">AI Curated</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.92rem;">
+          Tailored learning pathway based on your visual retention profile.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <div style="padding: 0.85rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border-left: 3px solid var(--accent-cyan);">
+            <strong>Interactive 3D Matrix Vector Lab</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Matches your visual learning style • 20 mins</p>
+          </div>
+          <div style="padding: 0.85rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong>Calculus Spaced Repetition Drill</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Strengthen derivative rules • 15 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Mastery -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Concept Mastery Progress</h2>
+          <span class="badge">Active Term</span>
+        </div>
+        <div id="activity-container" style="display: flex; flex-direction: column; gap: 1rem;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

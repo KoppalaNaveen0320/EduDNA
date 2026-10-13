@@ -1,0 +1,11 @@
+student_id,date,status,session_duration_mins
+S1001,2026-10-01,present,60
+S1001,2026-10-02,present,55
+S1002,2026-10-01,present,65
+S1002,2026-10-02,present,60
+S1003,2026-10-01,absent,0
+S1003,2026-10-02,present,45
+S1004,2026-10-01,present,70
+S1004,2026-10-02,present,65
+S1005,2026-10-01,late,35
+S1005,2026-10-02,present,50
